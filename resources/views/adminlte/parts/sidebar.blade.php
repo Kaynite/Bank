@@ -12,14 +12,14 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
                 <li class="nav-item">
-                    <a href="{{ route('employees.index') }}" class="nav-link {{ Route::currentRouteNamed('employees.index') ? 'active' : null }}">
+                    <a href="{{ route('employees.index') }}" class="nav-link {{ Route::currentRouteNamed('employees.index', 'employees.create', 'employees.edit') ? 'active' : null }}">
                         <i class="nav-icon fas fa-users"></i>
                         <p>Employees</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ route('departments.index') }}" class="nav-link">
+                    <a href="{{ route('departments.index') }}" class="nav-link {{ Route::currentRouteNamed('departments.index', 'departments.create', 'departments.edit') ? 'active' : null }}">
                         <i class="nav-icon fas fa-briefcase"></i>
                         <p>Departments</p>
                     </a>

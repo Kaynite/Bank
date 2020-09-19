@@ -30,7 +30,7 @@
     </div>
 @endsection
 
-@section('title', 'Add new department')
+@section('title', 'Edit department')
 
 @section('styles')
     {{-- Styles Goes Here --}}

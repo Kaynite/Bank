@@ -56,7 +56,9 @@
     </div>
 @endsection
 
-@section('title', 'Add new employee')
+@section('title')
+{{ $employee->name }}
+@endsection
 
 @section('styles')
     {{-- Styles Goes Here --}}
